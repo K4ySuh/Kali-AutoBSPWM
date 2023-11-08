@@ -250,6 +250,16 @@ else
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
+ 	echo -e "\n${purpleColour}[+] Installing sudo plugin...
+  	sleep 1.5
+	wget "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh"
+ 	chmod +x sudo.plugin.zsh
+  	sudo mkdir /usr/share/zsh.sudo
+   	sudo mv sudo.plugin.zsh /usr/share/zsh.sudo/
+    	sudo chown $user:$user /usr/share/zsh.sudo
+    	sleep 1
+   	
+ 		
 	echo -e "\n${purpleColour}[*] Configuring necessary permissions and symbolic links...\n${endColour}"
 	sleep 2
 	chmod -R +x ~/.config/bspwm/
@@ -275,7 +285,7 @@ else
 
 	echo -e "\n${greenColour}[+] Environment configured :D\n${endColour}"
 	sleep 1.5
-
+ 
 	while true; do
 		echo -en "\n${yellowColour}[?] It's necessary to restart the system. Do you want to restart the system now? ([y]/n) ${endColour}"
 		read -r
