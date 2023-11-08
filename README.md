@@ -1,10 +1,10 @@
 # Customization
 
-<kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty). <br></br>
-<kbd>Windows</kbd> + <kbd>W</kbd>: Close the current window.
-Windows + Alt + R: Restart the bspwm configuration.
-Windows + Alt + Q: Log out.
-Windows + (⬆⬅⬇➡): Navigate through windows in the current workspace.
+- <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty). 
+- <kbd>Windows</kbd> + <kbd>W</kbd>: Close the current window.
+- Windows + Alt + R: Restart the bspwm configuration.
+- Windows + Alt + Q: Log out.
+- Windows + (⬆⬅⬇➡): Navigate through windows in the current workspace.
 Windows + D: Open Rofi. Press Esc to exit.
 Windows + (1,2,3,4,5,6,7,8,9,0): Switch to the respective workspace.
 Windows + T: Change the current window to tile mode.
