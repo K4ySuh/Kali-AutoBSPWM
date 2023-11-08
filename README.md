@@ -1,5 +1,7 @@
 # Customization
 
+## Shortcuts BSPWM
+
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty). 
 - <kbd>Windows</kbd> + <kbd>W</kbd>: Close the current window.
 - <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd>: Restart the bspwm configuration.
