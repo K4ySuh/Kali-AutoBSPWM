@@ -1,4 +1,4 @@
-Windows + Enter: Open a terminal emulator window (kitty).
+<kbd>Windows</kbd> + Enter: Open a terminal emulator window (kitty).
 Windows + W: Close the current window.
 Windows + Alt + R: Restart the bspwm configuration.
 Windows + Alt + Q: Log out.
