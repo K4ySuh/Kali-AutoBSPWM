@@ -47,6 +47,8 @@
 
   ## To use alternative colors and have a different palette you can use both kitty.conf and color.ini
 
+  You should also install [FZF](https://github.com/r1vs3c).
+
   ## About
   All the credit for the user [r1vs3c](https://github.com/r1vs3c), I have only made minor changes for myself
   
