@@ -51,7 +51,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # Manual configuration
 
-PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+PATH=/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/opt/nvim-linux64/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
 
 # Manual aliases
 alias ll='lsd -lh --group-dirs=first'
@@ -59,7 +59,8 @@ alias la='lsd -a --group-dirs=first'
 alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
-alias cat='bat'
+alias cat='batcat'
+alias obsidian='/opt/Obsidian-1.4.16.AppImage'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
@@ -70,7 +71,7 @@ source /usr/share/zsh-sudo/sudo.plugin.zsh
 
 # Functions
 function mkt(){
-	mkdir {nmap,content,exploits,scripts}
+	mkdir {nmap,content,exploits}
 }
 
 # Extract nmap information
@@ -122,6 +123,23 @@ function fzf-lovely(){
 function rmk(){
 	scrub -p dod $1
 	shred -zun 10 -v $1
+}
+
+function cleanDocker(){ 
+	docker network rm $(docker network ls -q) 
+	docker rm $(docker ps -a -q) --force
+	docker rmi $(docker images ls -q) 
+	docker volume rm $(docker volume ls -q)  
+}
+
+function settarget(){
+    ip_address=$1
+    machine_name=$2
+    echo "$ip_address $machine_name" > /home/kaysuh/.config/polybar/shapes/scripts/target
+}
+
+function cleartarget(){
+    echo '' > /home/kaysuh/.config/polybar/shapes/scripts/target
 }
 
 # Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
