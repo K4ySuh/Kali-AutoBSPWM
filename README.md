@@ -1,7 +1,7 @@
 # Customization
 
-<kbd>Windows</kbd> + Enter: Open a terminal emulator window (kitty).
-Windows + W: Close the current window.
+<kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty).
+<kbd>Windows</kbd> + <kbd>W</kbd>: Close the current window.
 Windows + Alt + R: Restart the bspwm configuration.
 Windows + Alt + Q: Log out.
 Windows + (⬆⬅⬇➡): Navigate through windows in the current workspace.
