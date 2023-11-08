@@ -45,8 +45,8 @@
 - <kbd>F3</kbd>: Copy to buffer B.
 - <kbd>F4</kbd>: Paste from buffer B.
 
-  ## Para tener colores alternativos se pueden usar los dos kitty.conf y color.ini
+  ## To use alternative colors and have a different palette you can use both kitty.conf and color.ini
 
   ## About
-  Todo el crédito de este repositorio para el usuario [r1vs3c](https://github.com/r1vs3c), yo solo lo he modificado un poco y lo he adaptado a mis gustos personales.
+  All the credit for the user [r1vs3c](https://github.com/r1vs3c), I have only made minor changes for myself
   
