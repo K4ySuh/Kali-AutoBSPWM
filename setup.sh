@@ -1,6 +1,9 @@
 #!/usr/bin/bash
 
 # Author: Juan Rivas (aka @r1vs3c)
+# Modified: Javier Roldan (K4ysuh)
+# Changes: p10k.zsh configurations, for both root and default user, different visual schema for Kitty.conf (You need to add the files manually and change the includes, so you can keep both styles).
+# Changes: Different color schema for Polybar, auto-install sudo plugin for zsh, removed ohmyzsh full configuration, my own .zshrc config file.
 
 # Colours
 greenColour="\e[0;32m\033[1m"
