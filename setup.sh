@@ -253,7 +253,7 @@ else
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
- 	echo -e "\n${purpleColour}[+] Installing sudo plugin...
+ 	echo -e "\n${purpleColour}[+] Installing sudo plugin..."
   	sleep 1.5
 	wget "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh"
  	chmod +x sudo.plugin.zsh
