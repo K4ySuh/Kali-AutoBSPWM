@@ -1,5 +1,12 @@
 # Customization
 
+## Overview:
+![Image 1](assets/2023-12-10_14-13.png)
+![Image 2](assets/2023-12-10_14-13_1.png)
+
+## For laptop users:
+There's a module called "battery" within the .config/polybar/shapes/modules.ini file. You'll have to add the module to the config.ini file and set it up following the defined estructure. You'll have to modify the following files: glyphs, modules and config.ini. You can modify the color schema for polybar in the file colors.ini opening with nvim you'll be able to see the hex colours while editing. If you've never used polybar it could be a bit confusing but you'll find out how to follow the pattern after a few minutes of reading the code.
+
 ## Shortcuts BSPWM
 
 - <kbd>Windows</kbd> + <kbd>Enter</kbd>: Open a terminal emulator window (kitty). 
@@ -45,10 +52,14 @@
 - <kbd>F3</kbd>: Copy to buffer B.
 - <kbd>F4</kbd>: Paste from buffer B.
 
-  ## To use alternative colors and have a different palette you can use both kitty.conf and color.ini
-
-  You should also install [FZF](https://github.com/r1vs3c).
+  ## Extra:
+  
+  Dont' forget you're free to change the bspwmrc and wall files to modify the behaviour of the system every time you reload the BSPWM.
+  You should also install:
+  - [NVIM](https://nvchad.com/)
+  - [FZF](https://github.com/junegunn/fzf)
+  
 
   ## About
-  All the credit for the user [r1vs3c](https://github.com/r1vs3c), I have only made minor changes for myself
+  Credit for the user [r1vs3c](https://github.com/r1vs3c) he develop the original scripts, I have modified few thinghs for my personal style, since I rather a blueish schema and less round styles.
   
