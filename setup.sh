@@ -239,6 +239,7 @@ else
 	cp -v $dir/.zshrc ~/.zshrc
 	sudo ln -sfv ~/.zshrc /root/.zshrc
 	sudo cp -v $dir/Root_p10k.zsh /root/.p10k.zsh
+ 	cp $dir/.p10k.zsh ~/.p10.zsh
 	# sudo ln -sfv ~/.p10k.zsh /root/.p10k.zsh
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
@@ -260,12 +261,10 @@ else
     	sudo chown -R $user:$user /usr/share/zsh-sudo
     	sleep 1
 
-    	echo -e "\n${purpleColour}[+] Installing FZF for root and user..."
+    	echo -e "\n${purpleColour}[+] Installing FZF for user..."
      	sleep 1.5
       	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 	~/.fzf/install
- 	sudo git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
-	/root/.fzf/install
  	sleep 1
 
  	echo -e "\n${purpleColour}[+] Installing NVchad for user and root..."
