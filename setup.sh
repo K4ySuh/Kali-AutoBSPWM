@@ -181,7 +181,7 @@ else
 
 	echo -e "\n${purpleColour}[*] Installing Powerlevel10k for user $user...\n${endColour}"
 	sleep 2
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git 
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install Powerlevel10k for user $user!\n${endColour}"
 		exit 1
@@ -192,7 +192,7 @@ else
 
 	echo -e "\n${purpleColour}[*] Installing Powerlevel10k for user root...\n${endColour}"
 	sleep 2
-	sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.oh-my-zsh/custom/themes/powerlevel10k
+	sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/powerlevel10k
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install Powerlevel10k for user root!\n${endColour}"
 		exit 1
@@ -238,8 +238,8 @@ else
 	sleep 2
 	cp -v $dir/.zshrc ~/.zshrc
 	sudo ln -sfv ~/.zshrc /root/.zshrc
-	cp -v $dir/.p10k.zsh ~/.p10k.zsh
-	sudo ln -sfv ~/.p10k.zsh /root/.p10k.zsh
+	sudo cp -v $dir/Root_p10k.zsh /root/.p10k.zsh
+	# sudo ln -sfv ~/.p10k.zsh /root/.p10k.zsh
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
@@ -255,11 +255,24 @@ else
   	sleep 1.5
 	wget "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh"
  	chmod +x sudo.plugin.zsh
-  	sudo mkdir /usr/share/zsh.sudo
-   	sudo mv sudo.plugin.zsh /usr/share/zsh.sudo/
-    	sudo chown $user:$user /usr/share/zsh.sudo
+  	sudo mkdir /usr/share/zsh-sudo
+   	sudo mv sudo.plugin.zsh /usr/share/zsh-sudo/
+    	sudo chown -R $user:$user /usr/share/zsh-sudo
     	sleep 1
-   	
+
+    	echo -e "\n${purpleColour}[+] Installing FZF for root and user..."
+     	sleep 1.5
+      	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+	~/.fzf/install
+ 	sudo git clone --depth 1 https://github.com/junegunn/fzf.git /root/.fzf
+	/root/.fzf/install
+ 	sleep 1
+
+ 	echo -e "\n${purpleColour}[+] Installing NVchad for user and root..."
+  	sleep 1.5
+   	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+    	sudo git clone https://github.com/NvChad/NvChad /root/.config/nvim --depth 1
+     	sleep 1	
  		
 	echo -e "\n${purpleColour}[*] Configuring necessary permissions and symbolic links...\n${endColour}"
 	sleep 2
