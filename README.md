@@ -4,6 +4,11 @@
 ![Image 1](assets/2023-12-10_14-13.png)
 ![Image 2](assets/2023-12-10_14-13_1.png)
 
+## Instructions:
+You should check for the sudo plugin in /usr/share to check if it's properly installed you should find a file called zsh-sudo which you will have to change ownership as: **chmod -R user:user zsh.sudo**.
+You'll have to check for the .p10k.zsh files in each directory root and user. Check they're properly installed and if they're not matching something just downloads the ones from the repository and replace them manually.
+You'll have to manually download colors.conf and place it in the **.config/kitty/** directory and you'll have the colours.
+
 ## For laptop users:
 There's a module called "battery" within the .config/polybar/shapes/modules.ini file. You'll have to add the module to the config.ini file and set it up following the defined estructure. You'll have to modify the following files: glyphs, modules and config.ini. You can modify the color schema for polybar in the file colors.ini opening with nvim you'll be able to see the hex colours while editing. If you've never used polybar it could be a bit confusing but you'll find out how to follow the pattern after a few minutes of reading the code.
 
