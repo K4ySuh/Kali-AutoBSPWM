@@ -3,10 +3,13 @@
 ## Overview:
 ![Image 1](assets/2023-12-10_14-13.png)
 ![Image 2](assets/2023-12-10_14-13_1.png)
+![Image 3](assets/archkaliAmber.png)
+![Image 4](assets/archkaliEmber.png)
+![Image 5](assets/archkaliGreen.png)
+![Image 6](assets/archkaliBlue.png)
 
 ## Instructions:
-You should check for the sudo plugin in /usr/share to check if it's properly installed you should find a file called zsh-sudo which you will have to change ownership as: **chmod -R user:user zsh.sudo**.
-You'll have to check for the .p10k.zsh files in each directory root and user. Check they're properly installed and if they're not matching something just downloads the ones from the repository and replace them manually.
+Make sure you modify the script **setup.sh** before you run it, the part where you have to change and add the name of the wallpaper and colour schema you want is very noticeable, I ensure you. You can check the assets folder to see which ones are available!
 
 ## How to change Colour Schema
 We'll rely on pywal feature. In order to change colour schema and get it auto-generated for the background you want you'll have to do as follows:
@@ -67,10 +70,9 @@ There's a module called "battery" within the .config/polybar/shapes/modules.ini 
   
   Dont' forget you're free to change the bspwmrc and wall files to modify the behaviour of the system every time you reload the BSPWM.
   You should also install:
-  - [NVIM](https://nvchad.com/)
-  - [FZF](https://github.com/junegunn/fzf)
+  - [NVIM](https://nvchad.com/) first time you run it, you'll have to install the stuff. Just type N first input and later after everything is installed if you find any trouble while working with .sh files, open both nvims root and user and type: TSInstall all and let it finish. It'll solve your parse issues.
+  - [FZF](https://github.com/junegunn/fzf) for root user 
   
 
   ## About
-  Credit for the user [r1vs3c](https://github.com/r1vs3c) he develop the original scripts, I have modified few thinghs for my personal style, since I rather a blueish schema and less round styles.
-  
+  Credit for the user [r1vs3c](https://github.com/r1vs3c) he develop the original script, I have improved it, adding pretty much everything I'll need for qol in a fresh Kali machine, and modify the colours since I like variety and I get tired of the same style if I look at it too many hours during the days :P 
