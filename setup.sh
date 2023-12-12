@@ -2,8 +2,15 @@
 
 # Author: Juan Rivas (aka @r1vs3c)
 # Modified: Javier Roldan (K4ysuh)
-# Changes: p10k.zsh configurations, for both root and default user, different visual schema for Kitty.conf (You need to add the files manually and change the includes, so you can keep both styles).
-# Changes: Different color schema for Polybar, auto-install sudo plugin for zsh, removed ohmyzsh full configuration, my own .zshrc config file.
+# Changes:
+# Added 4 new colour schemas
+# New p10k for both user and root without round style
+# Powerline style for kitty and different background and opacity
+# New Polybar design with color-switch enable so you can switch between the schemes to match your wal.
+# New .zshrc without including all of the oh-my-zsh stuff.
+# Auto install FZF for user
+# Auto install NVchad for both user and root
+# Auto install sudo-plugin for zsh
 
 # Colours
 greenColour="\e[0;32m\033[1m"
@@ -223,8 +230,8 @@ else
 		mkdir ~/Wallpapers
 		cp -rv $dir/wallpapers/* ~/Wallpapers
 	fi
-	wal -nqi ~/Wallpapers/archkali.png
-	sudo wal -nqi ~/Wallpapers/archkali.png
+	wal -a 90 -b '#1a1b26' -nqi ~/Wallpapers/archkali.png ############################################### CHANGE THIS ##############################################################
+	sudo wal -a 90 -b '#1a1b26' -nqi ~/Wallpapers/archkali.png ################################################ CHANGE THIS ########################################################
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
