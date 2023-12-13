@@ -246,7 +246,7 @@ else
 	cp -v $dir/.zshrc ~/.zshrc
 	sudo ln -sfv ~/.zshrc /root/.zshrc
 	sudo cp -v $dir/Root_p10k.zsh /root/.p10k.zsh
- 	cp $dir/.p10k.zsh ~/.p10.zsh
+ 	cp $dir/.p10k.zsh ~/.p10k.zsh
 	# sudo ln -sfv ~/.p10k.zsh /root/.p10k.zsh
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
