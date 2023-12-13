@@ -70,7 +70,7 @@ There's a module called "battery" within the .config/polybar/shapes/modules.ini 
   
   Dont' forget you're free to change the bspwmrc and wall files to modify the behaviour of the system every time you reload the BSPWM.
   You should also install:
-  - [NVIM](https://nvchad.com/)
+  - [NVIM](https://github.com/neovim/neovim/releases/tag/stable)
     - first time you run it, you'll have to install the stuff. Just type N first input and later after everything is installed if you find any trouble while working with .sh files, open both nvims root and user and type: **TSInstall all** and let it   finish. It'll solve your parse issues.
   - [FZF](https://github.com/junegunn/fzf) for root user 
   
