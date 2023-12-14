@@ -230,8 +230,8 @@ else
 		mkdir ~/Wallpapers
 		cp -rv $dir/wallpapers/* ~/Wallpapers
 	fi
-	wal -a 90 -b '#1a1b26' -nqi ~/Wallpapers/archkali.png ############################################### CHANGE THIS ##############################################################
-	sudo wal -a 90 -b '#1a1b26' -nqi ~/Wallpapers/archkali.png ################################################ CHANGE THIS ########################################################
+	wal -a 90 -b '#1c1b26' -nqi ~/Wallpapers/archkali.png ############################################### CHANGE THIS ##############################################################
+	sudo wal -a 90 -b '#1c1b26' -nqi ~/Wallpapers/archkali.png ################################################ CHANGE THIS ########################################################
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
