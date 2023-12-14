@@ -8,6 +8,10 @@
 ![Image 5](assets/archkaliGreen.png)
 ![Image 6](assets/archkaliBlue.png)
 
+## Update:
+Now you're p10k will match the theme colour you choose:
+![Image 7](assets/p10kmatch.png)
+
 ## Instructions:
 Make sure you modify the script **setup.sh** before you run it, the part where you have to change and add the name of the wallpaper and colour schema you want is very noticeable, I ensure you. You can check the assets folder to see which ones are available!
 
