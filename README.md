@@ -89,4 +89,4 @@ that could happen because of hardware, connections, etc.
 - The installation went as intended but I don't have my colours matched with the background. Okay if you have this trouble go to **How to change Color Scheme**. Executing wal will make everything match.
 
 ## About
-  Credit for the user [r1vs3c](https://github.com/r1vs3c) he develop the original script and the user [Cube](https://github.com/ZLCube) who created the original wallpaper. I have improved it, adding pretty much everything I'll need for qol in a fresh Kali machine, added new color schemes, different polybar, backgrounds enhanced with AI etc.
+  Credit for the user [r1vs3c](https://github.com/r1vs3c) he develop the original script and the user [Cube](https://github.com/ZLCube) who created the original wallpaper. I have improved it, adding pretty much everything I'll need for qol in a fresh Kali machine, added new color schemes, different polybar, backgrounds enhanced with AI etc, added instructions for newer users on how to change and manage the environment, etc.
