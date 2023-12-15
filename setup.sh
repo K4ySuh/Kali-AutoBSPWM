@@ -259,7 +259,7 @@ else
 	echo -e "\n${greenColour}[+] Done\n${endColour}"
 	sleep 1.5
 
- 	echo -e "\n${purpleColour}[+] Installing sudo plugin..."
+ 	echo -e "\n${purpleColour}[+] Installing sudo plugin...${endColour}"
   	sleep 1.5
 	wget "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/plugins/sudo/sudo.plugin.zsh"
  	chmod +x sudo.plugin.zsh
@@ -268,17 +268,24 @@ else
     	sudo chown -R $user:$user /usr/share/zsh-sudo
     	sleep 1
 
-    	echo -e "\n${purpleColour}[+] Installing FZF for user..."
+    	echo -e "\n${purpleColour}[+] Installing FZF for user...${endColour}"
      	sleep 1.5
       	git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 	~/.fzf/install
  	sleep 1
 
- 	echo -e "\n${purpleColour}[+] Installing NVchad for user and root..."
+   	echo -e 
+
+ 	echo -e "\n${purpleColour}[+] Installing NVchad for user and root...${endColour}"
   	sleep 1.5
    	git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
     	sudo git clone https://github.com/NvChad/NvChad /root/.config/nvim --depth 1
      	sleep 1	
+
+      	echo -e "\n${purpleColour}[+] Installing Batcat...${endColour}"
+       	sleep 1.5
+	sudo apt install bat -y
+ 	sleep 1
  		
 	echo -e "\n${purpleColour}[*] Configuring necessary permissions and symbolic links...\n${endColour}"
 	sleep 2
