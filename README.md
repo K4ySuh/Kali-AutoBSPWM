@@ -17,7 +17,7 @@ Now you're p10k will match the theme color you choose:
 - ```bash
   sudo apt update
   sudo apt full-upgrade -y
-
+- Install batcat, you can get the link on **Extras** in this repository
 - Make sure you modify the script **setup.sh** before you run it, the part where you have to change and add the name of the wallpaper and colour schema you want is very noticeable, I ensure you. You can check the assets folder to see which ones are available!
 - To make changes on your polybar scheme, just left click on the palette icon for colurs and right click for styles.
 
