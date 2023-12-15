@@ -95,7 +95,19 @@ There's a module called "battery" within the .config/polybar/shapes/modules.ini 
   Dont' forget you're free to change the bspwmrc and wall files to modify the behaviour of the system every time you reload the BSPWM.
   You should also install:
   - [NVIM](https://github.com/neovim/neovim/releases/tag/stable)
-    - first time you run it, you'll have to install the stuff. Just type N first input and later after everything is installed if you find any trouble while working with .sh files, open both nvims root and user and type: **TSInstall all** and let it   finish. It'll solve your parse issues.
+    - first time you run it, you'll have to install the stuff. Just type N first input and later after everything is installed if you find any trouble while working with .sh files, open both nvims root and user and type: **TSInstall all** and let it finish. It'll solve your parse issues.
+    - ```bash
+      # Recommended installation:
+      # Download the release resource
+      mv /home/user/Downloads/nvim-linux64.tar.gz /opt/
+      cd /opt
+      tar -xf nvim-linux64.tar.gz
+      rm nvim-linux64.tar.gz
+      # Here you have 2 options ->
+      # First one:
+      cp nvim-linux64/bin/nvim /usr/local/bin/
+      # Second one:
+      # Open.zshrc and modify path to include /opt/nvim-linux64/bin: 
   - [FZF](https://github.com/junegunn/fzf) for root user
   - [Obsidian](https://obsidian.md/) It's a really cool application to take notes, creating writeups, etc. You can also combine it with Notion if you want portability between devices. You have an alias for this app in the .zshrc, you can check it to see where you should place the app-image.
 
