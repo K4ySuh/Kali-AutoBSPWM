@@ -17,7 +17,6 @@ Now you're p10k will match the theme color you choose:
 - ```bash
   sudo apt update
   sudo apt full-upgrade -y
-- Install batcat, you can get the link on **Extras** in this repository
 - Make sure you modify the script **setup.sh** before you run it, the part where you have to change and add the name of the wallpaper and colour schema you want is very noticeable, I ensure you. You can check the assets folder to see which ones are available!
 - To make changes on your polybar scheme, just left click on the palette icon for colurs and right click for styles.
 
@@ -85,7 +84,6 @@ There's a module called "battery" within the .config/polybar/shapes/modules.ini 
     - first time you run it, you'll have to install the stuff. Just type N first input and later after everything is installed if you find any trouble while working with .sh files, open both nvims root and user and type: **TSInstall all** and let it   finish. It'll solve your parse issues.
   - [FZF](https://github.com/junegunn/fzf) for root user
   - [Obsidian](https://obsidian.md/) It's a really cool application to take notes, creating writeups, etc. You can also combine it with Notion if you want portability between devices. You have an alias for this app in the .zshrc, you can check it to see where you should place the app-image.
-  - [bat](https://github.com/sharkdp/bat) This is a cat but with more colours and better style, you have an alias in the .zshrc, so make sure you install it, cause I mainly use this and not the orignal cat.
 
 ## Troubleshooting:
 There are few thinghs that potentially could go wrong since the script requires a bit more testing but it has worked for me multiple times in a row, enough to make me feel comfortable when providing it to other users, I'll make a quick guide here.
