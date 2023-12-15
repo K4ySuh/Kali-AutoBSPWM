@@ -60,6 +60,7 @@ alias l='lsd --group-dirs=first'
 alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias cat='batcat'
+alias catnp='batcat --style=plain --paging=never'
 alias obsidian='/opt/Obsidian-1.4.16.AppImage'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
