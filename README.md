@@ -108,7 +108,7 @@ There's a module called "battery" within the .config/polybar/shapes/modules.ini 
       cp nvim-linux64/bin/nvim /usr/local/bin/
       # Second one:
       # Open.zshrc and modify path to include /opt/nvim-linux64/bin:
-      # Second option it's probably easier and give less problems.
+      # Second option is probably easier and give less problems.
   - [FZF](https://github.com/junegunn/fzf) for root user
   - [Obsidian](https://obsidian.md/) It's a really cool application to take notes, creating writeups, etc. You can also combine it with Notion if you want portability between devices. You have an alias for this app in the .zshrc, you can check it to see where you should place the app-image.
 
