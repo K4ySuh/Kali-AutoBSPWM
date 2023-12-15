@@ -20,6 +20,20 @@ Now you're p10k will match the theme color you choose:
 - Make sure you modify the script **setup.sh** before you run it, the part where you have to change and add the name of the wallpaper and colour schema you want is very noticeable, I ensure you. You can check the assets folder to see which ones are available!
 - To make changes on your polybar scheme, just left click on the palette icon for colours and right click for styles.
 
+## I don't like sudo icon in my p10k, how do I change it?
+- ```bash
+  sudo su
+  cd
+  vi .p10k.zsh
+  # Go to normal mode (pressing Esc) and type:
+  /ROOT_TEMPLATE
+  # Go to nerdfonts on firefox -> click on "Icons" and look the one you prefer, copy it and paste on top on the previous one.
+  # Go to normal mode again -> and type
+  :wq!
+  # Reopen kitty and check the icon has been changed.
+  
+  
+
 ## How to change Color Scheme
 We'll rely on pywal feature. In order to change color scheme and get it auto-generated for the background you want you'll have to do as follows:
 - wal -a 90 -b #\<HexBackgroundColourForTTY> -i /home/user/Wallpapers/\<archkali*.png>
