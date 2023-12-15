@@ -188,7 +188,7 @@ else
 
 	echo -e "\n${purpleColour}[*] Installing Powerlevel10k for user $user...\n${endColour}"
 	sleep 2
-	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git 
+	git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install Powerlevel10k for user $user!\n${endColour}"
 		exit 1
