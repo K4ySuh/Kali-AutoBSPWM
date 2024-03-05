@@ -1,5 +1,8 @@
 # Customization
 
+## New polybar update
+![Image_7](assets/Polybar New.png)
+
 ## Overview:
 ![Image 1](assets/2023-12-10_14-13.png)
 ![Image 2](assets/2023-12-10_14-13_1.png)
@@ -8,7 +11,7 @@
 ![Image 5](assets/archkaliGreen.png)
 ![Image 6](assets/archkaliBlue.png)
 
-## Update:
+## First Update:
 Now you're p10k will match the theme color you choose:
 ![Image 7](assets/p10kmatch.png)
 
