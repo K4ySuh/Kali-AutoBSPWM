@@ -3,6 +3,7 @@
 ## New update
 ![Image_7](assets/update.png)
 ### What have changed?
+- More wallpapers because we all like changing the wallpaper from time to time :)
 - There are new icons for the Workspaces which I consider fancier than the previous ones, however they're commented in the "workspaces" module section from ~/.config/polybar/shapes/modules.ini if you want to go back to the previous ones.
 - New polybar will fade out over time and it will go a bit transparent, this is made via "Dim-Value" parameter at config.ini, there are also rounded corners because I got bored of the previous ones. Besides I've adjusted the offset and the widht in order to match the screen and the TTYs. If you're facing any trouble here, you should change the values at: ~/.config/polybar/shapes/config.ini and look for the parameters: "width" "offset-x". You'll have to touch a bit until they're fit, but there should be no problem.
 - When you refresh BSPWM using  <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> it will no longer change your TTY colours that you have previously set by using **wal** command. This way you can keep your TTY colours as you like without resetting every time you change the background. You'll need to change it directly in ~/.config/bspwm/bspwmrc and change the **feh** path so it will load the wallpaper you want.
