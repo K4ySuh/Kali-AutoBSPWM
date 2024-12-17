@@ -68,7 +68,7 @@ else
 
 	echo -e "\n${blueColour}[*] Installing pywal...\n${endColour}"
 	sleep 2
-	sudo pip3 install pywal
+	sudo pip3 install pywal --break-system-packages
 	if [ $? != 0 ] && [ $? != 130 ]; then
 		echo -e "\n${redColour}[-] Failed to install pywal or operation cancelled by user!\n${endColour}"
 		exit 1
