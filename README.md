@@ -1,4 +1,6 @@
-# Customization
+
+# State>
+The project is not being actively maintained bassically because I have it set on all my environments, it will be updated once I need to reinstall any of my Kali VMs :D
 
 ## New update
 ![Image_7](assets/update.png)
