@@ -1,6 +1,10 @@
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+# Align EnvVars for Nvim to work with NVchad
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
 # Enable Powerlevel10k instant prompt. Should stay at the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -61,9 +65,11 @@ alias lla='lsd -lha --group-dirs=first'
 alias ls='lsd --group-dirs=first'
 alias cat='batcat'
 alias catnp='batcat --style=plain --paging=never'
-alias obsidian='/opt/Obsidian-1.4.16.AppImage'
+alias htb='sudo openvpn /home/kaysuh/HackTheBox/vpns/lab_Kaysuh.ovpn'
+alias snvim='sudo XDG_CONFIG_HOME=/root/.config XDG_DATA_HOME=/root/.local/share nvim'
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh ]
 
 # Plugins
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -133,15 +139,7 @@ function cleanDocker(){
 	docker volume rm $(docker volume ls -q)  
 }
 
-function settarget(){
-    ip_address=$1
-    machine_name=$2
-    echo "$ip_address $machine_name" > /home/kaysuh/.config/polybar/shapes/scripts/target
-}
 
-function cleartarget(){
-    echo '' > /home/kaysuh/.config/polybar/shapes/scripts/target
-}
 
 # Finalize Powerlevel10k instant prompt. Should stay at the bottom of ~/.zshrc.
 (( ! ${+functions[p10k-instant-prompt-finalize]} )) || p10k-instant-prompt-finalize
@@ -153,7 +151,10 @@ bindkey "^[[F" end-of-line
 bindkey "^[[1;3C" forward-word
 bindkey "^[[1;3D" backward-word
 
-# Go variables and path
-export GOPATH=/root/go-workspace
-export GOROOT=/usr/local/go
-PATH=$PATH:$GOROOT/bin/:$GOPATH/bin
+# Go setup
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
